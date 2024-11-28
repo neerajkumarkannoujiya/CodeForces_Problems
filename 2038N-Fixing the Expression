@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t>0){
+            String st = sc.next();
+            int num1 = Integer.parseInt(st.substring(0,1));
+            int num2 = Integer.parseInt(st.substring(2,3));
+            if(num1==num2){
+                String ans = String.valueOf(num1) + "=" + String.valueOf(num2);
+                System.out.println(ans);
+            }
+            else if(num1<num2){
+                String ans = String.valueOf(num1) + "<" + String.valueOf(num2);
+                System.out.println(ans);
+            }
+            else{
+                String ans = String.valueOf(num1) + ">" + String.valueOf(num2);
+                System.out.println(ans);
+            }
+ 
+            t--;
+        }
+ 
+    }
+}
